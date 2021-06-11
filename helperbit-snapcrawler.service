@@ -1,0 +1,17 @@
+[Unit]
+Description=Helperbit main snapcrawler
+
+[Service]
+ExecStart=/usr/bin/node /root/mainnet/snapcrawler/rtindex.js
+WorkingDirectory=/root/mainnet/snapcrawler
+Restart=always
+RestartSec=10                       # Restart service after 10 seconds if node service crashes
+StandardOutput=syslog               # Output to syslog
+StandardError=syslog                # Output to syslog
+SyslogIdentifier=hb-sc-mainnet
+User=root
+#Group=<alternate group>
+Environment=NODE_ENV=production PORT=3123
+
+[Install]
+WantedBy=multi-user.target

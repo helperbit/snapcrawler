@@ -1,0 +1,50 @@
+{
+    "base": "https://",
+    "langs": ["it", "es"],
+    "include": [
+        "/",
+        "/events",
+        "",
+        "/i/manifesto",
+        "/i/multisignature-wallet",
+        "/i/trust-level",
+        "/i/donations",
+        "/i/legal-body-verify",
+        "/i/ambassador",
+        "/i/badges",
+        "/i/propose-noprofit",
+        "/i/geolocalization",
+        "/i/fundraising-campaigns",
+        "/i/social-projects",
+        "/organizations",
+        "/charity-organizations-list-accept-bitcoin-donation",
+        "/list-proposed-charities-crypto-donations",
+        "/projects",
+        "/about",
+        "/events",
+        "/donations",
+        "/signup/landing/npo",
+        "/signup/landing/singleuser",
+        "/signup/landing/company",
+        "/donations",
+        "/events/bymap"
+    ],
+    "priorities": [
+        { "path": ["/list-proposed-charities-crypto-donations"], "priority": 0.5, "changefreq": "daily" },
+        { "path": ["/charity-organizations-list-accept-bitcoin-donation"], "priority": 0.8, "changefreq": "weekly" },
+        { "path": ["/projects"], "priority": 0.8, "changefreq": "weekly" },
+        { "path": ["/donations"], "priority": 0.5, "changefreq": "daily" },
+        { "path": ["/donation/"], "priority": 0.5, "changefreq": "monthly" },
+        { "path": ["/transactions/"], "priority": 0.5, "changefreq": "monthly" },
+        { "path": ["/about"], "priority": 0.8, "changefreq": "monthly" },
+        { "path": ["/project/", "/graph"], "priority": 0.5, "changefreq": "weekly" },
+        { "path": ["/project/"], "priority": 0.8, "changefreq": "weekly" },
+        { "path": ["/i/"], "priority": 0.9, "changefreq": "monthly" },
+        { "path": "https://", "priority": 1.0, "changefreq": "daily" },
+        { "path": "https:///", "priority": 1.0, "changefreq": "daily" }
+    ],
+    "output": {
+        "sitemap": "./snapshots/sitemap",
+        "snapshots": "./snapshots"
+    }
+}
